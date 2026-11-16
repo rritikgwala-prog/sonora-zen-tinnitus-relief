@@ -123,7 +123,7 @@ tinnitus_relief_app/
 ### Option 1: Browser / Web Server
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/sonora-zen-tinnitus-relief.git
+git clone https://github.com/rritikgwala-prog/sonora-zen-tinnitus-relief.git
 cd sonora-zen-tinnitus-relief
 
 # Serve with any static server (or Python)
