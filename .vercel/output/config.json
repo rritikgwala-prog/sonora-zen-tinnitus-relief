@@ -1,0 +1,48 @@
+{
+  "version": 3,
+  "daemons": {},
+  "routes": [
+    {
+      "src": "^/(?:(.+)/)?index(?:\\.html)?/?$",
+      "headers": {
+        "Location": "/$1"
+      },
+      "status": 308
+    },
+    {
+      "src": "^/(.*)\\.html/?$",
+      "headers": {
+        "Location": "/$1"
+      },
+      "status": 308
+    },
+    {
+      "src": "^/service-worker\\.js$",
+      "headers": {
+        "Cache-Control": "public, max-age=0, must-revalidate"
+      },
+      "continue": true
+    },
+    {
+      "src": "^/manifest\\.json$",
+      "headers": {
+        "Content-Type": "application/manifest+json"
+      },
+      "continue": true
+    },
+    {
+      "handle": "error"
+    },
+    {
+      "status": 404,
+      "src": "^(?!/api).*$",
+      "dest": "/404"
+    }
+  ],
+  "overrides": {
+    "index.html": {
+      "path": "index"
+    }
+  },
+  "crons": []
+}

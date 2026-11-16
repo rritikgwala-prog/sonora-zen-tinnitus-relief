@@ -1,0 +1,23 @@
+{
+  "name": "sonora-zen-tinnitus-relief",
+  "version": "1.0.0",
+  "description": "Clinical-Grade Neuroacoustic Tinnitus & Somatic Relief Suite",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "desktop": "electron ."
+  },
+  "keywords": [
+    "tinnitus",
+    "sound-therapy",
+    "brown-noise",
+    "binaural-beats",
+    "notch-therapy",
+    "head-pressure-relief"
+  ],
+  "author": "Sonora Zen",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^40.8.0"
+  }
+}
